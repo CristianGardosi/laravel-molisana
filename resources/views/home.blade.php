@@ -3,18 +3,45 @@
 
 {{-- Specific contents for HOMEPAGE (Pasta Cards) --}}
 @section('content')
-    <div class="container">
+    <section class="type-section container">
+        <h2 class="section-title">Le Lunghe</h2>
         <div class="cards">
-            @foreach($cards as $card)
+            @foreach($lunghe as $card)
                 <div class="card">
                     <img src="{{ $card['src'] }}" 
                     alt="{{ $card['titolo'] }}">
-                    <h2> {{ $card['titolo'] }} </h2>
+                    <h3> {{ $card['titolo'] }} </h3>
                     <a href="#">Vedi prodotto</a>
                 </div>
             @endforeach
         </div>
-    </div>
+    </section>
+    <section class="type-section container">
+        <h2 class="section-title">Le Corte</h2>
+        <div class="cards">
+            @foreach($corte as $card)
+                <div class="card">
+                    <img src="{{ $card['src'] }}" 
+                    alt="{{ $card['titolo'] }}">
+                    <h3> {{ $card['titolo'] }} </h3>
+                    <a href="#">Vedi prodotto</a>
+                </div>
+            @endforeach
+        </div>
+    </section>
+    <section class="type-section container">
+        <h2 class="section-title">Le Cortissime</h2>
+        <div class="cards">
+            @foreach($cortissime as $card)
+                <div class="card">
+                    <img src="{{ $card['src'] }}" 
+                    alt="{{ $card['titolo'] }}">
+                    <h3> {{ $card['titolo'] }} </h3>
+                    <a href="#">Vedi prodotto</a>
+                </div>
+            @endforeach
+        </div>
+    </section>
        
 
 @endsection

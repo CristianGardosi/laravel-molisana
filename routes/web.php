@@ -130,8 +130,28 @@ $cards = [
         'descrizione' => 'Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere.',
     ],
 ];  
-    // 'cards' -> Key for access the $cards array
-    return view('home', ['cards' => $cards]);
+
+    // ARRAY PER TIPOLOGIA DI PASTA
+    // Lunghe
+    $lunghe = [];
+    // Corte
+    $corte = [];
+    // Cortissime
+    $cortissime = [];
+    // Loop per inserimento con conditionals
+    foreach ($cards as $card) {
+        if ( $card['tipo'] === 'lunga' ) {
+            $lunghe[] = $card;
+        }
+        elseif ( $card['tipo'] === 'corta' ) {
+            $corte[] = $card;
+        }
+        elseif ( $card['tipo'] === 'cortissima' ) {
+            $cortissime[] = $card;
+        }
+    }
+    // 'lunghe', 'corte', 'cortissime' -> Keys for access the arrays
+    return view('home', [ 'lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
 });
 
 
