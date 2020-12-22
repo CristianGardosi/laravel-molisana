@@ -1,0 +1,79 @@
+// LAYOUT CONTAINERS
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+// BOTTONS
+
+// DISPLAY FLEX & POSITION ABSOLUTE
+// *FLEX MIXIN* \\
+@mixin flexRow($type) {
+    display: flex;
+
+    @if $type == 'all-centered' {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @else if $type == 'start' {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    @else if $type == 'end' {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @else if $type == 'space-between' {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@mixin flexCol($type) {
+    display: flex;
+    flex-direction: column;
+
+    @if $type == 'all-centered' {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @else if $type == 'start' {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @else if $type == 'end' {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    @else if $type == 'space-between' {
+        justify-content: center;
+        align-items: space-between;
+    }
+}
+
+
+// *ABSOLUTE MIXIN* \\ 
+@mixin absolute($type: 'both') {
+    position: absolute;
+
+    @if $type == 'vertical' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @else if $type == 'horiz' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $type == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

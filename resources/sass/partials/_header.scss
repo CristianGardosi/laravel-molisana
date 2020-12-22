@@ -1,0 +1,8 @@
+.brand {
+    @include flexRow('all-centered');
+    margin: 50px;
+
+    .brand img {
+        width: 100px;
+    }
+}

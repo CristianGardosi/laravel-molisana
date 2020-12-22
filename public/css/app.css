@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  flex-basis: 31%;
+  margin: 1%;
+  padding: 15px;
+  min-height: 400px;
+  border: 3px solid #002d75;
+  text-align: center;
+}
+
+.cards .card h2 {
+  margin: 30px;
+}
+
+.cards .card a {
+  color: #002d75;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.brand .brand img {
+  width: 100px;
+}
+
