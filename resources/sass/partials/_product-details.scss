@@ -1,11 +1,41 @@
+.hero {
+
+    & h1 {
+        color: $brandMainBlue;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    & img {
+        display: block;
+    }
+
+    & p {
+        font-size: 18px;
+        font-weight: bold;
+        color: $brandMainBlue;
+        background: #b8dae4;
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+}
+
 .prev-next {
     @include flexRow('space-between');
     margin: 20px 0;
 
     & a  {
+        font-size: 18px;
+        font-weight: bold;
         text-decoration: none;
         color: $brandMainBlue;
         padding: 3px;
         border: 1px solid $brandMainBlue;
+        transition: .2s;
+    }
+
+    & a:hover  {
+        color: $brandMainRed;
+        
     }
 }

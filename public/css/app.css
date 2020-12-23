@@ -113,6 +113,25 @@ img {
   color: #b2282f;
 }
 
+.hero h1 {
+  color: #002d75;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero img {
+  display: block;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #002d75;
+  background: #b8dae4;
+  padding: 0 50px;
+  padding-bottom: 50px;
+}
+
 .prev-next {
   display: flex;
   justify-content: space-between;
@@ -121,9 +140,16 @@ img {
 }
 
 .prev-next a {
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   color: #002d75;
   padding: 3px;
   border: 1px solid #002d75;
+  transition: 0.2s;
+}
+
+.prev-next a:hover {
+  color: #b2282f;
 }
 
