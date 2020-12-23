@@ -1,8 +1,31 @@
 .brand {
     @include flexRow('all-centered');
-    margin: 50px;
+    margin-top: 10px;
 
     .brand img {
         width: 100px;
+    }
+}
+
+.navbar {
+    @include flexRow('all-centered');
+    padding: 20px;
+
+   
+
+    .nav-item {
+        padding: 0 30px;
+        list-style: none;
+
+        .nav-link {
+            list-style: none;
+            text-decoration: none;
+            color: $brandMainBlue;
+            transition: .2s;
+        } 
+
+        .nav-link:hover {
+            color: $brandMainRed;
+        }
     }
 }

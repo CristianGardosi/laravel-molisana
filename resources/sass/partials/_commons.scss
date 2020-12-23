@@ -11,14 +11,15 @@ body {
 
 img {
     max-width: 100%;
-
 }
 
 // <h2> titoli di sezione
 .section-title {
+    font-size: 60px;
     text-align: center;
+    border-top: 2px solid $brandMainBlue;
+    border-bottom: 2px solid $brandMainBlue;
     color: $brandMainBlue;
-    margin-top: 50px;
     margin-bottom: 10px;
 }
 

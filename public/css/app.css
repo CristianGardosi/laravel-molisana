@@ -7,7 +7,7 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 * {
@@ -26,15 +26,22 @@ img {
 }
 
 .section-title {
+  font-size: 60px;
   text-align: center;
+  border-top: 2px solid #002d75;
+  border-bottom: 2px solid #002d75;
   color: #002d75;
-  margin-top: 50px;
   margin-bottom: 10px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.background {
+  background-image: url(/images/fondo-pag-speciali.jpg?2f95c43d2f5c6ce37bf1838709b316a3);
+  padding: 50px 0;
 }
 
 .cards {
@@ -45,12 +52,13 @@ img {
 }
 
 .cards .card {
-  flex-basis: 31%;
-  margin: 1%;
+  flex-basis: 28%;
+  margin: 2%;
   padding: 15px;
   min-height: 400px;
   border: 3px solid #002d75;
   text-align: center;
+  background: #fff;
 }
 
 .cards .card h3 {
@@ -69,10 +77,33 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin-top: 10px;
 }
 
 .brand .brand img {
   width: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar .nav-item {
+  padding: 0 30px;
+  list-style: none;
+}
+
+.navbar .nav-item .nav-link {
+  list-style: none;
+  text-decoration: none;
+  color: #002d75;
+  transition: 0.2s;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #b2282f;
 }
 

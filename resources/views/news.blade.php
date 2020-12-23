@@ -1,11 +1,7 @@
 {{-- Default layout from main.blade.php --}}
 @extends('layouts.main')
 
-{{-- Specific contents for HOMEPAGE --}}
+{{-- Specific contents for HOMEPAGE (Pasta Cards) --}}
 @section('content')
-
-       <main>
-           <h1>Main content news</h1>
-       </main>
 
 @endsection
