@@ -1,0 +1,11 @@
+.prev-next {
+    @include flexRow('space-between');
+    margin: 20px 0;
+
+    & a  {
+        text-decoration: none;
+        color: $brandMainBlue;
+        padding: 3px;
+        border: 1px solid $brandMainBlue;
+    }
+}

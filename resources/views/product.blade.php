@@ -7,19 +7,6 @@
     
     <section class="product-details {{ $product['src-h'] }}">
         <div class="container">
-            {{-- Prev / next --}}
-            <div class="prev-next">
-                @if ($id > 0) 
-                    <a href="{{ route('product', $id - 1) }}">
-                        Prodotto precedente
-                    </a>
-                @endif
-                @if ($id < $length) 
-                    <a href="{{ route('product', $id + 1) }}">
-                        Prodotto Successivo
-                    </a>
-                @endif
-            </div>
             <div class="hero">
                 <h1>{{ $product['titolo'] }}</h1>
                 <img src="{{ $product['src-h'] }}" alt="{{ $product['titolo'] }}">
@@ -29,6 +16,19 @@
                         {{-- Escaping html --}}
                         {!! $product['descrizione'] !!}
                     </p>
+                </div>
+                {{-- Prev / next --}}
+                <div class="prev-next">
+                    @if ($id > 0) 
+                        <a href="{{ route('product', $id - 1) }}">
+                            <small>Prodotto precedente</small>
+                        </a>
+                    @endif
+                    @if ($id < $length) 
+                        <a href="{{ route('product', $id + 1) }}">
+                            <small>Prodotto Successivo</small>
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
