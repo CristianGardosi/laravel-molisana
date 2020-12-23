@@ -35,7 +35,8 @@ Route::get('/', function () {
         }
     }
     // 'lunghe', 'corte', 'cortissime' -> Keys for access the arrays
-    return view('home', [ 'lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
+    $collection = ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime];
+    return view('home', $collection);
 
 }) -> name('home');
 
@@ -55,8 +56,8 @@ Route::get('/product/{id}', function ($id) {
     $cards = config('pasta-site-data');
 
     $product = $cards[$id];
-    return view('product', ['product' => $product]);
-
+    $length = count($cards) - 1;
+    return view('product', compact('product', 'length', 'id'));
 }) -> name('product');
 
 
