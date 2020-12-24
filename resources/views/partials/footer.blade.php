@@ -54,27 +54,27 @@
             <ul class="links-list">
                 <li>
                     <a href="#">
-                        Il pastificio
+                        Le classiche
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Grano decorticato a pietra
+                        Le integrali
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Il Molise c'è
+                        Le speciali
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Filiera integrata
+                        Le biologiche
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        100 anni di pasta
+                        Le Gluten-Free
                     </a>
                 </li>
             </ul>
@@ -84,27 +84,27 @@
             <ul class="links-list">
                 <li>
                     <a href="#">
-                        Il pastificio
+                        Collezioni
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Grano decorticato a pietra
+                        Grandi cucine
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Il Molise c'è
+                        Biologiche
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        Filiera integrata
+                        Quadrate
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        100 anni di pasta
+                        Scarica tabelle
                     </a>
                 </li>
             </ul>
