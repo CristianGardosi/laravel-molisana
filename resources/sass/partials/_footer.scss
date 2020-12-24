@@ -1,0 +1,41 @@
+footer {
+    border-top: 1px solid $brandMainBlue;
+    background-image: url('../../../public/img/footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .footer {
+        @include flexRow('space-between');
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 150px;
+
+        .footer-logo-contacts {
+            flex-basis: 20%;
+            color: $footerLinksGrey;
+        }
+
+        .links-collection {
+            flex-basis: 20%;
+
+            & h3 {
+                padding-bottom: 20px;
+            }
+
+            & ul li {
+                list-style: none;
+                padding: 5px 0;
+
+                & a {
+                    text-decoration: none;
+                    color: $footerLinksGrey;
+                    transition: .2s;
+                }
+
+                & a:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
