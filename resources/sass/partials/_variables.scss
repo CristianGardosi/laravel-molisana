@@ -1,14 +1,23 @@
 // TYPHO
 h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 70px;
 }
 
 h2 {
     font-size: 50px;
+    font-family: 'Dancing Script', cursive;
 }
 
 h3 {
     font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto Slab', serif;
 }
 // COLORS
 $white: #fff;

@@ -11,12 +11,12 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('news') }}">
+            <a class="nav-link" href="http://127.0.0.1:8000/product/0">
                 <h3>Prodotti</h3>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('news') }}">
+            <a class="nav-link" href="{{ route('ricette') }}">
                 <h3>Ricette</h3>
             </a>
         </li>
@@ -26,7 +26,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('news') }}">
+            <a class="nav-link" href="{{ route('storia') }}">
                 <h3>La nostra storia</h3>
             </a>
         </li>

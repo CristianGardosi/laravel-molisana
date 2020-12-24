@@ -42,13 +42,6 @@ Route::get('/', function () {
 
 
 
-// !NEWS PAGE
-Route::get('/news', function () {
-    return view('news');
-
-}) -> name('news');
-
-
 
 // !PRODUCTS DETAILS PAGE
 Route::get('/product/{id}', function ($id) {
@@ -59,6 +52,34 @@ Route::get('/product/{id}', function ($id) {
     $length = count($cards) - 1;
     return view('product', compact('product', 'length', 'id'));
 }) -> name('product');
+
+
+
+
+// !RICETTE PAGE
+Route::get('/ricette', function () {
+    return view('ricette');
+
+}) -> name('ricette');
+
+
+
+
+// !LA NOSTRA STORIA PAGE
+Route::get('/storia', function () {
+    return view('storia');
+
+}) -> name('storia');
+
+
+
+
+// !NEWS PAGE
+Route::get('/news', function () {
+    return view('news');
+
+}) -> name('news');
+
 
 
 ?> 
