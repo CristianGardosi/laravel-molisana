@@ -109,7 +109,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
 }
 
 .navbar .nav-list {
@@ -155,16 +155,22 @@ img {
     position: absolute;
     right: 5%;
     top: 50%;
+    transition: 0.1s;
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
   }
 
   .navbar .hamburger .line {
-    width: 60px;
+    width: 50px;
     height: 6px;
     background: #002d75;
     margin: 10px;
+  }
+
+  .navbar .hamburger:hover {
+    background-color: #b2282f;
+    border-radius: 20px;
   }
 
   .navbar .nav-list {
@@ -298,7 +304,8 @@ footer .footer .links-collection:last-child {
 
 .hero h1 {
   color: #002d75;
-  margin: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -340,7 +347,8 @@ footer .footer .links-collection:last-child {
 @media screen and (max-width: 1000px) {
   .hero h1 {
     font-size: 50px;
-    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .hero p {

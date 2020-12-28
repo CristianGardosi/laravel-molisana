@@ -20,12 +20,12 @@
                 {{-- Prev / next --}}
                 <div class="prev-next">
                     @if ($id > 0) 
-                        <a href="{{ route('product', $id - 1) }}">
+                        <a class="precedente" href="{{ route('product', $id - 1) }}">
                             Prodotto precedente
                         </a>
                     @endif
                     @if ($id < $length) 
-                        <a href="{{ route('product', $id + 1) }}">
+                        <a class="successivo" href="{{ route('product', $id + 1) }}">
                             Prodotto Successivo
                         </a>
                     @endif

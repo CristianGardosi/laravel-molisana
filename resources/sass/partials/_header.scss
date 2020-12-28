@@ -10,7 +10,7 @@
 
 .navbar {
     @include flexRow('all-centered');
-    height: 15vh;
+    height: 10vh;
 
    .nav-list {
     @include flexRow('all-centered');
@@ -54,18 +54,22 @@
             position: absolute;
             right: 5%;
             top: 50%;
+            transition: .1s;
             transform: translateY(-50%);
             z-index: 2;
             cursor: pointer;
-
-
+        
             .line {
-                width: 60px;
+                width: 50px;
                 height: 6px;
                 background: $brandMainBlue;
                 margin: 10px;
             }
         }
+        .hamburger:hover {
+            background-color: $brandMainRed;
+            border-radius: 20px;
+        } 
 
         .nav-list {
             position: fixed;
