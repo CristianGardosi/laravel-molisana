@@ -1,9 +1,11 @@
 <footer>
     <div class="container footer">
         <div class="footer-logo-contacts">
-            <a href="{{ route('home') }}">
-                <img src="{{asset('img/logo.png')}}" alt="Logo">
-           </a>
+            <div class="footer-logo">
+                <a href="{{ route('home') }}">
+                    <img src="{{asset('img/logo.png')}}" alt="Logo">
+                </a>
+            </div>
            <small>
             Ragione sociale: La Molisana S.P.A.
             Sede legale: Contrada Colle delle Api, 100/A - 86100 - Campobasso (CB)

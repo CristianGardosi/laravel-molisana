@@ -11,12 +11,13 @@ footer {
         padding-bottom: 150px;
 
         .footer-logo-contacts {
-            flex-basis: 22%;
+            flex-basis: 200px;
+            padding-left: 50px;
             color: $footerLinksGrey;
         }
 
         .links-collection {
-            flex-basis: 22%;
+            flex-basis: 200px;
 
             & h3 {
                 padding-bottom: 20px;
@@ -34,6 +35,38 @@ footer {
 
                 & a:hover {
                     color: $black;
+                }
+            }
+        }
+
+        .links-collection:last-child{
+            padding-right: 50px; 
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    footer {
+
+        .footer {
+            @include flexCol('start');
+    
+            .footer-logo-contacts {
+                padding: 0 50px; 
+                color: $footerLinksGrey;
+            }
+    
+            .links-collection {
+                padding: 30px 50px; 
+    
+                & h3 {
+                    font-size: 40px;
+                    padding-bottom: 10px;
+                }
+
+                & a {
+                    font-size: 20px;
                 }
             }
         }

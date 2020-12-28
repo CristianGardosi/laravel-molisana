@@ -237,12 +237,13 @@ footer .footer {
 }
 
 footer .footer .footer-logo-contacts {
-  flex-basis: 22%;
+  flex-basis: 200px;
+  padding-left: 50px;
   color: #828282;
 }
 
 footer .footer .links-collection {
-  flex-basis: 22%;
+  flex-basis: 200px;
 }
 
 footer .footer .links-collection h3 {
@@ -262,6 +263,37 @@ footer .footer .links-collection ul li a {
 
 footer .footer .links-collection ul li a:hover {
   color: #000;
+}
+
+footer .footer .links-collection:last-child {
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  footer .footer .footer-logo-contacts {
+    padding: 0 50px;
+    color: #828282;
+  }
+
+  footer .footer .links-collection {
+    padding: 30px 50px;
+  }
+
+  footer .footer .links-collection h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+
+  footer .footer .links-collection a {
+    font-size: 20px;
+  }
 }
 
 .hero h1 {
