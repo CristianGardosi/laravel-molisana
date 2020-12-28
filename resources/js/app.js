@@ -4,6 +4,7 @@ import Vue from 'vue';
 import axios from 'axios';
 
 
+// * Hamburger menu functions * \\
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-list');
 const link = document.querySelectorAll('.nav-item');

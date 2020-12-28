@@ -31599,6 +31599,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // !Impor
 
 
 
+ // * Hamburger menu functions * \\
 
 var hamburger = document.querySelector('.hamburger');
 var navLinks = document.querySelector('.nav-list');
