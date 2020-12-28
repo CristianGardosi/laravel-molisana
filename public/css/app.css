@@ -91,7 +91,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  height: 25vh;
   background: #daedf3;
 }
 
@@ -103,23 +103,74 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  height: 15vh;
 }
 
-.navbar .nav-item {
+.navbar .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-list .nav-item {
   padding: 0 30px;
   list-style: none;
 }
 
-.navbar .nav-item .nav-link {
+.navbar .nav-list .nav-item .nav-link {
   list-style: none;
   text-decoration: none;
   color: #002d75;
   transition: 0.2s;
 }
 
-.navbar .nav-item .nav-link:hover {
+.navbar .nav-list .nav-item .nav-link:hover {
   color: #b2282f;
+}
+
+.navbar .nav-list .nav-item .nav-link.active {
+  list-style: none;
+  text-decoration: none;
+  color: #b2282f;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar .hamburger {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .navbar .hamburger .line {
+    width: 40px;
+    height: 5px;
+    background: #002d75;
+    margin: 5px;
+  }
+
+  .navbar .nav-list {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: #daedf3;
+    clip-path: circle(100px at 50% -10%);
+    -webkit-clip-path: circle(100px at 50% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .navbar .nav-list.open {
+    clip-path: circle(800px at 50% -10%);
+    -webkit-clip-path: circle(800px at 50% -10%);
+  }
 }
 
 footer {
@@ -168,7 +219,7 @@ footer .footer .links-collection ul li a:hover {
 
 .hero h1 {
   color: #002d75;
-  margin-bottom: 30px;
+  margin: 40px;
   text-align: center;
 }
 
