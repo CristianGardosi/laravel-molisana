@@ -6,10 +6,13 @@ import axios from 'axios';
 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-list');
-const linkss = document.querySelectorAll('.nav-item');
+const link = document.querySelectorAll('.nav-item');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open')
+    navLinks.classList.toggle('open');
+    link.forEach(link => {
+        link.classList.toggle('fade');
+    });
 });
 
 

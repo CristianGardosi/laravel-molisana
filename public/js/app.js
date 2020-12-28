@@ -31602,9 +31602,12 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // !Impor
 
 var hamburger = document.querySelector('.hamburger');
 var navLinks = document.querySelector('.nav-list');
-var linkss = document.querySelectorAll('.nav-item');
+var link = document.querySelectorAll('.nav-item');
 hamburger.addEventListener('click', function () {
   navLinks.classList.toggle('open');
+  link.forEach(function (link) {
+    link.classList.toggle('fade');
+  });
 }); // * Active class for the selected nav-link * \\
 
 var current = window.location.href;
